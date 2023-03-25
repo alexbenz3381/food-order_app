@@ -1,0 +1,86 @@
+
+
+.cart{
+    position: absolute;
+    z-index: 99;
+    max-width: 40rem;
+    width: 100%;
+    background-color: antiquewhite;
+   border-radius: 10px;
+   top: 8rem;
+   left:30%;
+   animation:cart 2s ease;
+   
+}
+
+
+
+.header{
+    text-align: center;
+    color: cadetblue;
+    font-family: cursive;
+}
+
+.items{
+   height: 20rem;
+    overflow: auto;
+}
+
+.total{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+
+}
+
+.price{
+    color: green;
+}
+
+.total button{
+    width: 25%;
+    background-color: rgb(249, 251, 247);
+    color: rgb(24, 23, 23);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+.total .cancel{
+   background-color: rgb(167, 2, 2);
+   color: aliceblue;
+}
+
+.total button:hover{
+    background-color: rgb(30, 102, 2);
+    color: aliceblue;
+}
+
+.total .cancel:hover{
+    background-color: black;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    top:5rem;
+}
+
+
+@keyframes cart {
+    from{opacity: 0;
+        transform: translateY(-30rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:400px ) {
+    .cart{
+        max-width: 100%;
+        width: 100%;
+        left: 0;
+    }
+}

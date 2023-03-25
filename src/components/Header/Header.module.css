@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background-color: rgba(251, 188, 70, 0.944);
+    color: aliceblue;
+    box-shadow: 4px 2px 5px rgba(221, 162, 11, 0.368);
+    
+}
+
+
+
+
+
+.effect{
+    animation: header 1.5s ease-in-out;
+}
+
+.effect h2{
+    font-family: cursive;
+    font-size: 35px;
+    margin-top: 10px;
+
+}
+
+
+@keyframes header {
+    from{
+        opacity:0;
+        transform: translateY(-5rem);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) ;
+    }
+}
+
+
+.mainImg{
+    max-width:100rem;
+    overflow: hidden;
+
+}
+
+.mainImg img{
+    width:110%;
+    height: 400px;
+    transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}

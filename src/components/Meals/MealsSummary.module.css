@@ -1,0 +1,60 @@
+.summary{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    max-width: 40rem;
+    text-align: center;
+    position: absolute;
+   /* margin: auto; */
+    top:70px;
+    left:30%;
+    animation: summary 1s ease-in;
+}
+
+.summary h2{
+    font-size: 45px;
+    padding: 4px;
+    color: rgb(241, 244, 241);
+    line-height: 30px;
+    text-shadow: 2px 4px 5px rgba(11, 3, 3, 0.579);
+}
+
+.summary p{
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(12, 14, 8);
+    text-shadow: 2px 4px 5px rgb(251, 244, 244);
+}
+
+@media screen and ( max-width: 800px){
+.summary{
+    left:10%;
+}
+.summary h2{
+    font-size: 35px;
+}
+
+.summary h2{
+    color: white;
+    
+}
+
+.summary p{
+    color: black;
+    text-shadow: 2px 4px 5px rgb(251, 244, 244);
+    font-size: 19px;
+}
+}
+
+@keyframes summary {
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+
+
+
+    
